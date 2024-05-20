@@ -1,0 +1,50 @@
+/* Header.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #b33939); /* Gradient from Red to Dark Red */
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.food-icon {
+  margin-right: 5px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff7675; /* Light Red */
+}
+
+.footer {
+  background: linear-gradient(135deg, #000000, #b33939); /* Gradient from Red to Dark Red */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

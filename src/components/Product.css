@@ -1,0 +1,116 @@
+/* Reset some basic styles */
+body, h3, p, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main product container styling */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #b33939); 
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+/* Image container styling */
+.imggg {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imggg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.imggg img:hover {
+  transform: scale(1.1);
+}
+
+
+.details {
+  padding: 20px;
+  text-align: center;
+}
+
+.details h3 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 1.2em;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+button.addCart {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+button.addCart:hover {
+  background-color: #45a049; 
+}
+
+
+button.btnRemove {
+  background-color: #ff4d4d; 
+  color: white;
+}
+
+button.btnRemove:hover {
+  background-color: #cc0000; 
+}
+
+
+@media (max-width: 600px) {
+  .product {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .imggg {
+    height: 150px;
+  }
+
+  .details h3 {
+    font-size: 1.2em;
+  }
+
+  .details p {
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+}
